@@ -1,0 +1,21 @@
+<html>
+<body>
+    <h1>Итоговая таблица</h1>
+      <table>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Amount</th>
+        </tr>
+      
+    <?php foreach($table as $client): ?>
+        <tr>
+            <td><?php echo $client['id']; ?></td>
+            <td><?php echo $client['name']; ?></td>
+            <td><?php echo $client['amount']; ?></td>
+        </tr>
+    <?php endforeach; ?>    
+       </table>
+       <h2>Сумма по всем клиентам за период: <?php echo $finalAmount; ?></h2>
+</body>
+</html>
